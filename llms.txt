@@ -1,0 +1,39 @@
+# Gavoir
+
+> Gavoir is a premium digital marketing agency based in Mumbai, India. We specialize in SEO optimization, Google Ads / PPC management, social media marketing, web design & development, branding & identity design, and lead generation.
+
+## About
+
+Gavoir helps businesses grow through modern digital marketing strategies, premium design, and performance-driven campaigns. Founded in 2024, we serve clients globally with a growth-first approach. Our team combines data-driven strategy with creative execution to deliver measurable results.
+
+## Services
+
+- **SEO Optimization**: Data-driven SEO strategies including technical audits, keyword research, on-page optimization, and link building to dominate search rankings.
+- **Google Ads / PPC Management**: ROI-focused Google Ads campaigns with budget optimization, bid management, and conversion tracking.
+- **Social Media Marketing**: Brand building across Instagram, LinkedIn, Facebook, and more with engaging content, strategic campaigns, and community management.
+- **Web Design & Development**: Premium, responsive websites built for conversions with modern design, fast loading, and mobile-first approach.
+- **Branding & Identity Design**: Complete brand identity creation including logos, brand guidelines, color palettes, and visual design systems.
+- **Lead Generation**: Optimized sales funnels, landing pages, and automated lead capture systems to turn visitors into customers.
+
+## Our Process
+
+1. **Discover**: Deep dive into your business, audience, and competitors to understand the full picture.
+2. **Strategy**: Tailored roadmap with clear goals, channels, and timelines.
+3. **Design & Launch**: Pixel-perfect execution of campaigns, websites, and funnels.
+4. **Optimize & Scale**: Continuous testing, refinement, and scaling of what works.
+
+## Contact
+
+- **Email**: hello@gavoir.com
+- **Phone**: +91 98765 43210
+- **Location**: Mumbai, India
+- **Website**: https://gavoir.com
+- **Free Consultation**: https://gavoir.com/contact.html
+
+## Pages
+
+- [Home](https://gavoir.com/)
+- [About Us](https://gavoir.com/about.html)
+- [Services](https://gavoir.com/services.html)
+- [Portfolio](https://gavoir.com/projects.html)
+- [Contact](https://gavoir.com/contact.html)
