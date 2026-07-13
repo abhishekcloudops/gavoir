@@ -351,7 +351,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   flex-wrap: wrap;
 }
 
-/* Hero Image Strip */
+/* Hero Image Strip (old — kept for subpages if needed) */
 .hero-images {
   display: grid;
   grid-template-columns: 1fr 1.3fr 1fr;
@@ -397,6 +397,68 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   border-radius: 20px;
   border: 2px solid var(--accent);
   box-shadow: 0 0 0 6px rgba(108, 63, 255, 0.08);
+}
+
+/* ===== HERO CAROUSEL ===== */
+.hero-carousel {
+  margin-top: 60px;
+  overflow: hidden;
+  border-radius: 20px;
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}
+
+.hero-carousel-track {
+  display: flex;
+  gap: 24px;
+  animation: carouselScroll 30s linear infinite;
+  width: max-content;
+}
+
+.hero-carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.hero-carousel-slide {
+  flex-shrink: 0;
+  width: 400px;
+  height: 280px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease);
+}
+
+.hero-carousel-slide:hover img {
+  transform: scale(1.06);
+}
+
+@keyframes carouselScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 12px)); }
+}
+
+@media (max-width: 768px) {
+  .hero-carousel-slide {
+    width: 280px;
+    height: 200px;
+  }
+  .hero-carousel {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-carousel-slide {
+    width: 240px;
+    height: 170px;
+  }
 }
 
 /* ===== ABOUT / WHY US SECTION ===== */

@@ -1,4 +1,4 @@
-/* ===== NexaGrowth — Stuxen-Inspired Interactions ===== */
+/* ===== Gavoir — Stuxen-Inspired Interactions ===== */
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -161,21 +161,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ===== HERO PARALLAX ON MOUSE MOVE =====
+  // ===== HERO CAROUSEL PARALLAX ON MOUSE MOVE =====
   const hero = document.querySelector('.hero');
-  const heroImages = document.querySelector('.hero-images');
+  const heroCarousel = document.querySelector('.hero-carousel');
 
-  if (hero && heroImages) {
+  if (hero && heroCarousel) {
     hero.addEventListener('mousemove', (e) => {
       const rect = hero.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width - 0.5;
       const y = (e.clientY - rect.top) / rect.height - 0.5;
 
-      heroImages.style.transform = `translateX(${x * 10}px) translateY(${y * 5}px)`;
+      heroCarousel.style.transform = `translateY(${y * 5}px)`;
     });
 
     hero.addEventListener('mouseleave', () => {
-      heroImages.style.transform = '';
+      heroCarousel.style.transform = '';
     });
   }
 
