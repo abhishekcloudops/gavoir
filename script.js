@@ -83,22 +83,22 @@ document.addEventListener('DOMContentLoaded', () => {
     revealObserver.observe(el);
   });
 
-  // ===== SERVICE ITEMS HOVER EFFECT =====
+  // ===== SERVICE ACCORDION =====
   const serviceItems = document.querySelectorAll('.service-item');
   
   serviceItems.forEach(item => {
-    item.addEventListener('mouseenter', () => {
+    item.addEventListener('click', () => {
+      const isActive = item.classList.contains('active');
+      
+      // Close all other items
       serviceItems.forEach(other => {
-        if (other !== item) {
-          other.style.opacity = '0.4';
-        }
+        other.classList.remove('active');
       });
-    });
-
-    item.addEventListener('mouseleave', () => {
-      serviceItems.forEach(other => {
-        other.style.opacity = '1';
-      });
+      
+      // Toggle current item
+      if (!isActive) {
+        item.classList.add('active');
+      }
     });
   });
 

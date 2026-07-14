@@ -604,10 +604,7 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
 }
 
 .service-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 36px 0;
+  padding: 0;
   border-bottom: 1px solid var(--border-strong);
   cursor: pointer;
   transition: var(--transition);
@@ -618,7 +615,15 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   border-top: 1px solid var(--border-strong);
 }
 
-.service-item:hover {
+.service-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 0;
+  transition: var(--transition);
+}
+
+.service-item:hover .service-item-header {
   padding-left: 20px;
 }
 
@@ -645,8 +650,29 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   line-height: 1.1;
 }
 
-.service-item:hover .service-name {
+.service-item:hover .service-name,
+.service-item.active .service-name {
   color: var(--text-primary);
+}
+
+/* Accordion content - hidden by default */
+.service-item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0 0 0 56px;
+}
+
+.service-item.active .service-item-content {
+  max-height: 200px;
+  padding: 0 0 32px 56px;
+}
+
+.service-item-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  max-width: 700px;
 }
 
 .service-arrow {
@@ -667,7 +693,13 @@ button { cursor: pointer; font-family: inherit; border: none; background: none; 
   background: var(--accent);
   border-color: var(--accent);
   color: white;
-  transform: rotate(-45deg);
+}
+
+.service-item.active .service-arrow {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: white;
+  transform: rotate(180deg);
 }
 
 /* ===== PROJECTS / PORTFOLIO ===== */
